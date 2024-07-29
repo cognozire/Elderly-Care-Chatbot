@@ -10,7 +10,7 @@ if "messages" not in st.session_state:
     st.session_state.messages = []
 
 with st.chat_message("system"):
-    st.write("Hi there!👋I'm ready to answer your questions. Ask me anything!")
+    st.write("Hi there!👋")
 for message in st.session_state.messages:
     with st.chat_message(message["role"]):
         st.markdown(message["content"])
